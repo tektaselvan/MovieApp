@@ -122,20 +122,21 @@ namespace MovieApp
 
             try
             {
-                var emailService = new EmailService(
-                    "smtp.ethereal.email",
-                    587,
-                    "angie93@ethereal.email",
-                    "EWWUsRxPUb5u7JpDpC"
-                );
+                // App.config üzerinden bilgileri alıyoruz
+                var host = System.Configuration.ConfigurationManager.AppSettings["EmailHost"];
+                var port = int.Parse(System.Configuration.ConfigurationManager.AppSettings["EmailPort"]);
+                var user = System.Configuration.ConfigurationManager.AppSettings["EmailUser"];
+                var pass = System.Configuration.ConfigurationManager.AppSettings["EmailPass"];
+
+                var emailService = new EmailService(host, port, user, pass);
 
                 string subject = $"Film Tavsiyesi: {_movie.Title}";
                 string body = $@"
-                    <h2>{_movie.Title}</h2>
-                    <p>{_movie.Overview}</p>
-                    <p><b>Çıkış Tarihi:</b> {_movie.ReleaseDate?.ToString("dd.MM.yyyy")}</p>
-                    {(string.IsNullOrEmpty(_movie.PosterPath) ? "" : $"<img src='{_movie.PosterPath}' width='200'/>")}
-                ";
+            <h2>{_movie.Title}</h2>
+            <p>{_movie.Overview}</p>
+            <p><b>Çıkış Tarihi:</b> {_movie.ReleaseDate?.ToString("dd.MM.yyyy")}</p>
+            {(string.IsNullOrEmpty(_movie.PosterPath) ? "" : $"<img src='{_movie.PosterPath}' width='200'/>")}
+        ";
 
                 await emailService.SendEmailAsync(txtRecommendEmail.Text, subject, body);
 
@@ -145,7 +146,7 @@ namespace MovieApp
             {
                 MessageBox.Show("E-posta gönderilemedi: " + ex.Message);
             }
-        
+
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)

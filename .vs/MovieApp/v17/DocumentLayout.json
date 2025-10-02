@@ -3,31 +3,43 @@
   "WorkspaceRootPath": "C:\\Users\\elvan\\Desktop\\MovieApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|c:\\users\\elvan\\desktop\\movieapp\\formmovies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|solutionrelative:formmovies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|c:\\users\\elvan\\desktop\\movieapp\\filmdetailform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|solutionrelative:filmdetailform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|c:\\users\\elvan\\desktop\\movieapp\\formmovies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|solutionrelative:formmovies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|C:\\Users\\elvan\\Desktop\\MovieApp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|c:\\users\\elvan\\desktop\\movieapp\\data\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|solutionrelative:data\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|C:\\Users\\elvan\\Desktop\\MovieApp\\filmdetailform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|solutionrelative:filmdetailform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|c:\\users\\elvan\\desktop\\movieapp\\services\\tmdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|C:\\Users\\elvan\\Desktop\\MovieApp\\services\\tmdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|solutionrelative:services\\tmdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|c:\\users\\elvan\\desktop\\movieapp\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|C:\\Users\\elvan\\Desktop\\MovieApp\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|solutionrelative:services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|c:\\users\\elvan\\desktop\\movieapp\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|C:\\Users\\elvan\\Desktop\\MovieApp\\formmovies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|solutionrelative:formmovies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|C:\\Users\\elvan\\Desktop\\MovieApp\\formmovies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|solutionrelative:formmovies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|C:\\Users\\elvan\\Desktop\\MovieApp\\data\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|solutionrelative:data\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|C:\\Users\\elvan\\Desktop\\MovieApp\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|solutionrelative:models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|c:\\users\\elvan\\desktop\\movieapp\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|C:\\Users\\elvan\\Desktop\\MovieApp\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1443DC29-03CB-4E73-82E5-3E81A3BFFD4E}|MovieApp.csproj|solutionrelative:models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -55,31 +67,65 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormMovies.cs",
-              "DocumentMoniker": "C:\\Users\\elvan\\Desktop\\MovieApp\\FormMovies.cs",
-              "RelativeDocumentMoniker": "FormMovies.cs",
-              "ToolTip": "C:\\Users\\elvan\\Desktop\\MovieApp\\FormMovies.cs",
-              "RelativeToolTip": "FormMovies.cs",
-              "ViewState": "AgIAAOUAAAAAAAAAAAAWwO8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T04:25:42.432Z",
-              "EditorCaption": ""
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\elvan\\Desktop\\MovieApp\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\elvan\\Desktop\\MovieApp\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-02T07:17:05.821Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FilmDetailForm.cs",
+              "DocumentMoniker": "C:\\Users\\elvan\\Desktop\\MovieApp\\FilmDetailForm.cs",
+              "RelativeDocumentMoniker": "FilmDetailForm.cs",
+              "ToolTip": "C:\\Users\\elvan\\Desktop\\MovieApp\\FilmDetailForm.cs",
+              "RelativeToolTip": "FilmDetailForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T07:16:32.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FilmDetailForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\elvan\\Desktop\\MovieApp\\FilmDetailForm.cs",
+              "RelativeDocumentMoniker": "FilmDetailForm.cs",
+              "ToolTip": "C:\\Users\\elvan\\Desktop\\MovieApp\\FilmDetailForm.cs [Design]",
+              "RelativeToolTip": "FilmDetailForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T07:16:30.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FormMovies.cs [Design]",
               "DocumentMoniker": "C:\\Users\\elvan\\Desktop\\MovieApp\\FormMovies.cs",
               "RelativeDocumentMoniker": "FormMovies.cs",
               "ToolTip": "C:\\Users\\elvan\\Desktop\\MovieApp\\FormMovies.cs [Design]",
               "RelativeToolTip": "FormMovies.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T03:58:17.979Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-02T03:58:17.979Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "FormMovies.cs",
+              "DocumentMoniker": "C:\\Users\\elvan\\Desktop\\MovieApp\\FormMovies.cs",
+              "RelativeDocumentMoniker": "FormMovies.cs",
+              "ToolTip": "C:\\Users\\elvan\\Desktop\\MovieApp\\FormMovies.cs",
+              "RelativeToolTip": "FormMovies.cs",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAiwO8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T04:25:42.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "MovieRepository.cs",
               "DocumentMoniker": "C:\\Users\\elvan\\Desktop\\MovieApp\\Data\\MovieRepository.cs",
               "RelativeDocumentMoniker": "Data\\MovieRepository.cs",
@@ -87,8 +133,7 @@
               "RelativeToolTip": "Data\\MovieRepository.cs",
               "ViewState": "AgIAAGYAAAAAAAAAAAAAwIUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T04:24:31.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T04:24:31.01Z"
             },
             {
               "$type": "Document",
@@ -98,10 +143,9 @@
               "RelativeDocumentMoniker": "Services\\TmdbService.cs",
               "ToolTip": "C:\\Users\\elvan\\Desktop\\MovieApp\\Services\\TmdbService.cs",
               "RelativeToolTip": "Services\\TmdbService.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAYwG4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAYwG4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T04:24:06.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T04:24:06.027Z"
             },
             {
               "$type": "Document",
@@ -111,14 +155,13 @@
               "RelativeDocumentMoniker": "Services\\EmailService.cs",
               "ToolTip": "C:\\Users\\elvan\\Desktop\\MovieApp\\Services\\EmailService.cs",
               "RelativeToolTip": "Services\\EmailService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwC0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T04:23:46.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T04:23:46.181Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Rating.cs",
               "DocumentMoniker": "C:\\Users\\elvan\\Desktop\\MovieApp\\Models\\Rating.cs",
               "RelativeDocumentMoniker": "Models\\Rating.cs",
@@ -126,12 +169,11 @@
               "RelativeToolTip": "Models\\Rating.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAowBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T04:22:46.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T04:22:46.259Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Movie.cs",
               "DocumentMoniker": "C:\\Users\\elvan\\Desktop\\MovieApp\\Models\\Movie.cs",
               "RelativeDocumentMoniker": "Models\\Movie.cs",
@@ -139,8 +181,7 @@
               "RelativeToolTip": "Models\\Movie.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAA5wBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T04:22:36.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T04:22:36.214Z"
             }
           ]
         }
