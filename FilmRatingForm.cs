@@ -39,19 +39,29 @@ namespace MovieApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            var rating = new Rating
+            try
             {
-                MovieId = _movieId,
-                UserIdentifier = null, // opsiyonel
-                RatingValue = (byte)nudRating.Value,
-                Note = richTextBox1.Text
-            };
+                var rating = new Rating
+                {
+                    MovieId = _movieId,
+                    UserIdentifier = null, // opsiyonel
+                    RatingValue = (byte)nudRating.Value,
+                    Note = richTextBox1.Text
+                };
 
-            _ratingRepo.AddRating(rating);
+                _ratingRepo.AddRating(rating);
 
-            XtraMessageBox.Show("Puan ve not kaydedildi!");
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+                XtraMessageBox.Show("Puan ve not kaydedildi!");
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show("Bir hata oluştu: " + ex.Message,
+                                    "Hata",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error);
+            }
         }
 
         private void lblMovieTitle_Click(object sender, EventArgs e)

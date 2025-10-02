@@ -30,6 +30,7 @@ namespace MovieApp
 
         private void FormMovies_Load(object sender, EventArgs e)
         {
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             progressBarControl1.Visible = false;
 
             LoadMovies();
