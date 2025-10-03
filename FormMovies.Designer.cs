@@ -32,11 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMovies));
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.btnViewDetails = new DevExpress.XtraEditors.SimpleButton();
             this.progressBarControl1 = new DevExpress.XtraEditors.ProgressBarControl();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
-            this.btnAddRating = new DevExpress.XtraEditors.SimpleButton();
             this.dateRelease = new DevExpress.XtraEditors.DateEdit();
             this.btnAllMovies = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -50,6 +47,11 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraOpenFileDialog1 = new DevExpress.XtraEditors.XtraOpenFileDialog(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.filmDetaylarınıGörüntüleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.filmiPuanlaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.filmiSilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarControl1.Properties)).BeginInit();
@@ -60,45 +62,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtPosterPath.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.btnViewDetails);
+            this.groupControl1.Controls.Add(this.groupBox1);
             this.groupControl1.Controls.Add(this.progressBarControl1);
-            this.groupControl1.Controls.Add(this.richTextBox1);
-            this.groupControl1.Controls.Add(this.btnDelete);
-            this.groupControl1.Controls.Add(this.btnAddRating);
-            this.groupControl1.Controls.Add(this.dateRelease);
             this.groupControl1.Controls.Add(this.btnAllMovies);
-            this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.txtOverview);
-            this.groupControl1.Controls.Add(this.txtTitle);
             this.groupControl1.Controls.Add(this.lblProgress);
-            this.groupControl1.Controls.Add(this.txtPosterPath);
             this.groupControl1.Controls.Add(this.btnImportMovies);
-            this.groupControl1.Controls.Add(this.btnAdd);
-            this.groupControl1.Controls.Add(this.btnSelectPoster);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(755, 284);
+            this.groupControl1.Size = new System.Drawing.Size(755, 311);
             this.groupControl1.TabIndex = 16;
             this.groupControl1.Text = "Film Ekleme ve İşlem Alanı";
             // 
-            // btnViewDetails
-            // 
-            this.btnViewDetails.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnViewDetails.ImageOptions.Image")));
-            this.btnViewDetails.Location = new System.Drawing.Point(390, 40);
-            this.btnViewDetails.Name = "btnViewDetails";
-            this.btnViewDetails.Size = new System.Drawing.Size(265, 23);
-            this.btnViewDetails.TabIndex = 12;
-            this.btnViewDetails.Text = "Film Detaylarını Görüntüle";
-            this.btnViewDetails.Click += new System.EventHandler(this.btnViewDetails_Click);
-            // 
             // progressBarControl1
             // 
-            this.progressBarControl1.Location = new System.Drawing.Point(452, 184);
+            this.progressBarControl1.Location = new System.Drawing.Point(528, 84);
             this.progressBarControl1.Name = "progressBarControl1";
             this.progressBarControl1.Properties.Maximum = 1000;
             this.progressBarControl1.Size = new System.Drawing.Size(221, 18);
@@ -106,36 +91,16 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(59, 112);
+            this.richTextBox1.Location = new System.Drawing.Point(29, 106);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(265, 80);
             this.richTextBox1.TabIndex = 14;
             this.richTextBox1.Text = "";
             // 
-            // btnDelete
-            // 
-            this.btnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageOptions.Image")));
-            this.btnDelete.Location = new System.Drawing.Point(390, 156);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(265, 23);
-            this.btnDelete.TabIndex = 2;
-            this.btnDelete.Text = "Film Sil";
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // btnAddRating
-            // 
-            this.btnAddRating.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddRating.ImageOptions.Image")));
-            this.btnAddRating.Location = new System.Drawing.Point(390, 98);
-            this.btnAddRating.Name = "btnAddRating";
-            this.btnAddRating.Size = new System.Drawing.Size(265, 23);
-            this.btnAddRating.TabIndex = 11;
-            this.btnAddRating.Text = "Film Puanla";
-            this.btnAddRating.Click += new System.EventHandler(this.btnAddRating_Click);
-            // 
             // dateRelease
             // 
             this.dateRelease.EditValue = null;
-            this.dateRelease.Location = new System.Drawing.Point(59, 37);
+            this.dateRelease.Location = new System.Drawing.Point(29, 31);
             this.dateRelease.Name = "dateRelease";
             this.dateRelease.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -148,16 +113,16 @@
             // btnAllMovies
             // 
             this.btnAllMovies.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAllMovies.ImageOptions.Image")));
-            this.btnAllMovies.Location = new System.Drawing.Point(390, 69);
+            this.btnAllMovies.Location = new System.Drawing.Point(420, 26);
             this.btnAllMovies.Name = "btnAllMovies";
-            this.btnAllMovies.Size = new System.Drawing.Size(265, 23);
+            this.btnAllMovies.Size = new System.Drawing.Size(162, 52);
             this.btnAllMovies.TabIndex = 8;
             this.btnAllMovies.Text = "Tüm Filmlerin Listesine Git";
             this.btnAllMovies.Click += new System.EventHandler(this.btnAllMovies_Click);
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(59, 92);
+            this.labelControl1.Location = new System.Drawing.Point(29, 86);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(77, 13);
             this.labelControl1.TabIndex = 15;
@@ -166,7 +131,7 @@
             // txtOverview
             // 
             this.txtOverview.EditValue = "Açıklama Alanı";
-            this.txtOverview.Location = new System.Drawing.Point(452, 209);
+            this.txtOverview.Location = new System.Drawing.Point(528, 109);
             this.txtOverview.Name = "txtOverview";
             this.txtOverview.Properties.NullText = "Film Afiş Görseli (URL)";
             this.txtOverview.Size = new System.Drawing.Size(100, 20);
@@ -175,7 +140,7 @@
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(59, 64);
+            this.txtTitle.Location = new System.Drawing.Point(29, 58);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Properties.NullText = "Başlık Alanı";
             this.txtTitle.Size = new System.Drawing.Size(265, 20);
@@ -183,7 +148,7 @@
             // 
             // lblProgress
             // 
-            this.lblProgress.Location = new System.Drawing.Point(452, 235);
+            this.lblProgress.Location = new System.Drawing.Point(528, 135);
             this.lblProgress.Name = "lblProgress";
             this.lblProgress.Size = new System.Drawing.Size(42, 13);
             this.lblProgress.TabIndex = 14;
@@ -194,7 +159,7 @@
             // 
             this.txtPosterPath.EditValue = "Görsel (URL) Alanı";
             this.txtPosterPath.Enabled = false;
-            this.txtPosterPath.Location = new System.Drawing.Point(59, 196);
+            this.txtPosterPath.Location = new System.Drawing.Point(29, 190);
             this.txtPosterPath.Name = "txtPosterPath";
             this.txtPosterPath.Properties.NullText = "Film Açıklaması Giriniz";
             this.txtPosterPath.Properties.ReadOnly = true;
@@ -204,9 +169,9 @@
             // btnImportMovies
             // 
             this.btnImportMovies.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnImportMovies.ImageOptions.Image")));
-            this.btnImportMovies.Location = new System.Drawing.Point(390, 127);
+            this.btnImportMovies.Location = new System.Drawing.Point(588, 26);
             this.btnImportMovies.Name = "btnImportMovies";
-            this.btnImportMovies.Size = new System.Drawing.Size(265, 23);
+            this.btnImportMovies.Size = new System.Drawing.Size(162, 52);
             this.btnImportMovies.TabIndex = 7;
             this.btnImportMovies.Text = "TMDb\'den Film Yükle";
             this.btnImportMovies.Click += new System.EventHandler(this.btnImportMovies_Click);
@@ -214,7 +179,7 @@
             // btnAdd
             // 
             this.btnAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImageOptions.Image")));
-            this.btnAdd.Location = new System.Drawing.Point(59, 251);
+            this.btnAdd.Location = new System.Drawing.Point(29, 245);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(265, 23);
             this.btnAdd.TabIndex = 1;
@@ -224,7 +189,7 @@
             // btnSelectPoster
             // 
             this.btnSelectPoster.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSelectPoster.ImageOptions.Image")));
-            this.btnSelectPoster.Location = new System.Drawing.Point(59, 222);
+            this.btnSelectPoster.Location = new System.Drawing.Point(29, 216);
             this.btnSelectPoster.Name = "btnSelectPoster";
             this.btnSelectPoster.Size = new System.Drawing.Size(265, 23);
             this.btnSelectPoster.TabIndex = 13;
@@ -237,12 +202,12 @@
             gridLevelNode1.RelationName = "Level1";
             this.gridControl1.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
             gridLevelNode1});
-            this.gridControl1.Location = new System.Drawing.Point(0, 284);
+            this.gridControl1.Location = new System.Drawing.Point(0, 311);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 100);
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 150);
-            this.gridControl1.Size = new System.Drawing.Size(755, 322);
+            this.gridControl1.Size = new System.Drawing.Size(755, 295);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -260,6 +225,52 @@
             // xtraOpenFileDialog1
             // 
             this.xtraOpenFileDialog1.FileName = "xtraOpenFileDialog1";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.filmDetaylarınıGörüntüleToolStripMenuItem,
+            this.filmiPuanlaToolStripMenuItem,
+            this.filmiSilToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(213, 70);
+            // 
+            // filmDetaylarınıGörüntüleToolStripMenuItem
+            // 
+            this.filmDetaylarınıGörüntüleToolStripMenuItem.Name = "filmDetaylarınıGörüntüleToolStripMenuItem";
+            this.filmDetaylarınıGörüntüleToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.filmDetaylarınıGörüntüleToolStripMenuItem.Text = "Film Detaylarını Görüntüle";
+            this.filmDetaylarınıGörüntüleToolStripMenuItem.Click += new System.EventHandler(this.filmDetaylarınıGörüntüleToolStripMenuItem_Click);
+            // 
+            // filmiPuanlaToolStripMenuItem
+            // 
+            this.filmiPuanlaToolStripMenuItem.Name = "filmiPuanlaToolStripMenuItem";
+            this.filmiPuanlaToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.filmiPuanlaToolStripMenuItem.Text = "Filmi Puanla";
+            this.filmiPuanlaToolStripMenuItem.Click += new System.EventHandler(this.filmiPuanlaToolStripMenuItem_Click);
+            // 
+            // filmiSilToolStripMenuItem
+            // 
+            this.filmiSilToolStripMenuItem.Name = "filmiSilToolStripMenuItem";
+            this.filmiSilToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.filmiSilToolStripMenuItem.Text = "Filmi Sil";
+            this.filmiSilToolStripMenuItem.Click += new System.EventHandler(this.filmiSilToolStripMenuItem_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.richTextBox1);
+            this.groupBox1.Controls.Add(this.btnSelectPoster);
+            this.groupBox1.Controls.Add(this.btnAdd);
+            this.groupBox1.Controls.Add(this.dateRelease);
+            this.groupBox1.Controls.Add(this.txtPosterPath);
+            this.groupBox1.Controls.Add(this.txtTitle);
+            this.groupBox1.Controls.Add(this.labelControl1);
+            this.groupBox1.Location = new System.Drawing.Point(26, 26);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(324, 280);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Film Ekleme Alanı";
             // 
             // FormMovies
             // 
@@ -284,6 +295,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtPosterPath.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -293,14 +307,11 @@
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.SimpleButton btnAdd;
-        private DevExpress.XtraEditors.SimpleButton btnDelete;
         private DevExpress.XtraEditors.TextEdit txtTitle;
         private DevExpress.XtraEditors.DateEdit dateRelease;
         private DevExpress.XtraEditors.SimpleButton btnImportMovies;
         private DevExpress.XtraEditors.SimpleButton btnAllMovies;
         private DevExpress.XtraEditors.TextEdit txtPosterPath;
-        private DevExpress.XtraEditors.SimpleButton btnAddRating;
-        private DevExpress.XtraEditors.SimpleButton btnViewDetails;
         private DevExpress.XtraEditors.XtraOpenFileDialog xtraOpenFileDialog1;
         private DevExpress.XtraEditors.SimpleButton btnSelectPoster;
         private DevExpress.XtraEditors.TextEdit txtOverview;
@@ -309,5 +320,10 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem filmDetaylarınıGörüntüleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem filmiPuanlaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem filmiSilToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

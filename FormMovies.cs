@@ -32,7 +32,7 @@ namespace MovieApp
         {
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             progressBarControl1.Visible = false;
-
+            gridControl1.ContextMenuStrip = contextMenuStrip1;
             LoadMovies();
         }
         private void LoadMovies()
@@ -97,26 +97,7 @@ namespace MovieApp
             }
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            if (gridView1.GetSelectedRows().Length == 0)
-            {
-                XtraMessageBox.Show("Lütfen silmek istediğiniz filmi seçin.");
-                return;
-            }
-            var rowHandle = gridView1.GetSelectedRows()[0];
-            var movie = gridView1.GetRow(rowHandle) as Movie;
-            if (movie == null)
-                return;
-            var confirm = XtraMessageBox.Show($"\"{movie.Title}\" filmini silmek istediğinize emin misiniz?", "Onay", MessageBoxButtons.YesNo);
-            if (confirm == DialogResult.Yes)
-            {
-                _repo.SoftDeleteMovie(movie.Id);
-                LoadMovies();
-            }
-        }
 
-       
         private async void btnImportMovies_Click(object sender, EventArgs e)
         {
             ImportMoviesFromApiAsync();
@@ -133,38 +114,6 @@ namespace MovieApp
 
         }
 
-        private void btnAddRating_Click(object sender, EventArgs e)
-        {
-            if (gridView1.GetFocusedRow() is Movie selectedMovie)
-            {
-                using (var form = new FilmRatingForm(selectedMovie.Id, selectedMovie.Title))
-                {
-                    if (form.ShowDialog() == DialogResult.OK)
-                    {
-                        LoadMovies();
-                    }
-                }
-            }
-            else
-            {
-                XtraMessageBox.Show("Lütfen bir film seçin.");
-            }
-        }
-
-        private void btnViewDetails_Click(object sender, EventArgs e)
-        {
-            if (gridView1.GetFocusedRow() is Movie selectedMovie)
-            {
-                using (var form = new FilmDetailForm(selectedMovie))
-                {
-                    form.ShowDialog();
-                }
-            }
-            else
-            {
-                XtraMessageBox.Show("Lütfen bir film seçin.");
-            }
-        }
 
         private void gridView1_CustomColumnDisplayText(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs e)
         {
@@ -239,6 +188,58 @@ namespace MovieApp
         private void groupControl2_Paint_1(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void filmDetaylarınıGörüntüleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (gridView1.GetFocusedRow() is Movie selectedMovie)
+            {
+                using (var form = new FilmDetailForm(selectedMovie))
+                {
+                    form.ShowDialog();
+                }
+            }
+            else
+            {
+                XtraMessageBox.Show("Lütfen bir film seçin.");
+            }
+        }
+
+        private void filmiPuanlaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (gridView1.GetFocusedRow() is Movie selectedMovie)
+            {
+                using (var form = new FilmRatingForm(selectedMovie.Id, selectedMovie.Title))
+                {
+                    if (form.ShowDialog() == DialogResult.OK)
+                    {
+                        LoadMovies();
+                    }
+                }
+            }
+            else
+            {
+                XtraMessageBox.Show("Lütfen bir film seçin.");
+            }
+        }
+
+        private void filmiSilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (gridView1.GetSelectedRows().Length == 0)
+            {
+                XtraMessageBox.Show("Lütfen silmek istediğiniz filmi seçin.");
+                return;
+            }
+            var rowHandle = gridView1.GetSelectedRows()[0];
+            var movie = gridView1.GetRow(rowHandle) as Movie;
+            if (movie == null)
+                return;
+            var confirm = XtraMessageBox.Show($"\"{movie.Title}\" filmini silmek istediğinize emin misiniz?", "Onay", MessageBoxButtons.YesNo);
+            if (confirm == DialogResult.Yes)
+            {
+                _repo.SoftDeleteMovie(movie.Id);
+                LoadMovies();
+            }
         }
     }
 }
