@@ -75,11 +75,52 @@ Uygulama **.NET Framework 4.6.1**, **C#**, **DevExpress** kullanılarak gelişti
 
 ---
 
-## Kurulum
-1. Veritabanını oluşturun ve SQL scriptini çalıştırın.
-2. `App.config` dosyasına **TMDB API Key** ekleyin.
-3. Projeyi Visual Studio’da açın ve derleyin.
-4. Uygulamayı çalıştırın, filmleri çekmek için **Import Movies** butonunu kullanın.
+## 🚀 Kurulum
+1. **Veritabanını oluşturun**  
+   - `MovieAppDb` isimli veritabanını oluşturun.  
+   - Repository içerisinde bulunan SQL scriptini çalıştırarak tabloları oluşturun.  
+
+2. **App.config ayarları**  
+   - `App.config` dosyasındaki `<connectionStrings>` alanında kendi SQL Server bağlantı bilginizi girin.  
+   - TMDB API Key’inizi `App.config` içine ekleyin:  
+     ```xml
+     <appSettings>
+         <add key="TmdbApiKey" value="YOUR_API_KEY" />
+     </appSettings>
+     ```
+
+3. **Projeyi açın ve derleyin**  
+   - Projeyi Visual Studio’da açın.  
+   - `NuGet` bağımlılıklarını yükleyin (DevExpress, Newtonsoft.Json vb.).  
+   - Projeyi derleyin ve çalıştırın.  
+
+---
+
+## 🖥️ Kullanım
+
+### Film İşlem Formu
+- **Film ekleme**: Manuel olarak film ekleyebilirsiniz.  
+- **API’den film getirme**: “Import Movies” butonu ile TMDB API’den 1000 filme kadar veri çekebilirsiniz.  
+- **Film listesine geçiş**: Tüm filmleri listeleyen form ekranına yönlendiren bir buton bulunmaktadır.  
+- **Grid üzerinde sağ tık menüsü (ContextMenuStrip)**:
+  - **Film Detaylarını Görüntüle**  
+  - **Filmi Puanla**  
+  - **Filmi Sil**
+
+### Film Puanlama Formu
+- Seçilen filmin adı görüntülenir.  
+- Kullanıcı 1 ile 10 arasında (10 dahil) puan verebilir.  
+- İsteğe bağlı olarak film hakkında not girilebilir.  
+
+### Film Detay Formu
+- Filmin **adı, açıklaması, görseli ve çıkış tarihi** görüntülenir.  
+- **Kullanıcı puanı** ve **ortalama puan bilgisi** bulunur.  
+- Film, e-posta yoluyla başka bir kullanıcıya tavsiye edilebilir:  
+  - Email adresi girilip **“Mail Gönder”** butonuna tıklanarak paylaşım yapılır.  
+
+### Tüm Filmler Listesi
+- Tüm eklenmiş ve API’den getirilmiş filmler bu formda görüntülenir.  
+
 
 ---
 
